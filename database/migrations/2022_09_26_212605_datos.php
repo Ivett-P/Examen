@@ -13,7 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('datos', function (Blueprint $table) {
+            $table->id();
+            $table->string('nombre');
+            $table->string('descripcion');
+            $table->double('precio');
+            $table->integer('existencia');
+            $table->timestamps();
+        });
     }
 
     /**

@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Examen</title>
+    <title>Examen </title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -35,18 +35,11 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Programación</div>
+                <div class="sidebar-brand-text mx-3">Program</div>
             </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
-
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
@@ -61,13 +54,13 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
-                    <span>Consulta</span>
+                    <span>Abrir</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header"></h6>
-                        <a class="collapse-item" href="registro.blade.php">Registrar</a>
-                        <a class="collapse-item" href="listado.blade.php">Listado</a>
+                        <a class="collapse-item" href="datos.registro.blade.php">Registrar</a>
+                        <a class="collapse-item" href="datos.listado.blade.php">Listado</a>
                     </div>
                 </div>
             </li>
@@ -299,64 +292,7 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
-                        </div>
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                    <thead>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>NOMBRE</th>
-                                            <th>Nacademico</th>
-                                            <th>Estadocivil</th>
-                                            <th>ACCIONES</th>
-                                        </tr>
-                                    </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>NOMBRE</th>
-                                            <th>Nacademico</th>
-                                            <th>Estadocivil</th>
-                                            <th>ACCIONES</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-
-                                        <?php
-                                        //hacemos instancias del archivo PHP
-                                        include("conexion.php");
-                                        $con= conectar();
-                                        //generamos la sentencia sql
-                                        $sql = "CALL visualizar";
-                                        $datos = mysqli_query($con,$sql);
-                                        while($tabla = mysqli_fetch_array($datos)){ 
-                                        ?>
-                                        <tr>
-                                            <th><?php echo $tabla['id']; ?></th>
-                                            <th><?php echo $tabla['Nombre']; ?></th>
-                                            <th><?php echo $tabla['Nacademico']; ?></th>
-                                            <th><?php echo $tabla['Estadocivil']; ?></th>
-                                            <th>
-                                            <a href="editar.php?id=<?php echo $tabla['id']; ?>" class="btn btn-warning btn-circle btn-sm">
-                                        <i class="fas fa-edit"></i></a>
-                                        <a href="delete.php?id=<?php echo $tabla['id']; ?>"   class="btn btn-danger btn-circle btn-sm">
-                                        <i class="fas fa-trash"></i></a>
-                                    
-                                            </th>
-                                        </tr>
-                                        <?php
-  
-}
-?>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
+                    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
 
                 </div>
                 <!-- /.container-fluid -->

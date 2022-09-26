@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Examen</title>
+    <title>Examen </title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -35,25 +35,18 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-laugh-wink"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Registrar</div>
+                <div class="sidebar-brand-text mx-3">Program</div>
             </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
-
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Interface
+                Opciones
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -61,13 +54,13 @@
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-cog"></i>
-                    <span>Consulta</span>
+                    <span>Abrir</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header"></h6>
-                        <a class="collapse-item" href="registro.blade.php">Registrar</a>
-                        <a class="collapse-item" href="listado.blade.php">Listado</a>
+                        <a class="collapse-item" href="datos.registro.blade.php">Registrar</a>
+                        <a class="collapse-item" href="datos.listado.blade.php">Listado</a>
                     </div>
                 </div>
             </li>
@@ -299,22 +292,9 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-         <div class="container-fluid">
-         <form method= "POST" action="insert.php">
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Nombre</label>
-            <input type="text" class="form-control" name="Nombre" id="Nombre" aria-describedby="emailHelp">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Nacademico</label>
-            <input type="text" class="form-control" name="Nacademico" id="Nacademico" aria-describedby="emailHelp">
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">EstadoCivil</label>
-            <input type="text" class="form-control" name="Estadocivil" id="Estadocivil" aria-describedby="emailHelp">
-          </div>
-          <button type="submit" class="btn btn-primary">REGISTRAR</button>
-        </form>  
+                    <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
+
+                </div>
                 <!-- /.container-fluid -->
 
             </div>

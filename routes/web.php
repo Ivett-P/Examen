@@ -14,7 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('listas.blade.php');
-    Route::get('Datos/delete{iden}', [DatosController::class, 'delete'])->name('datos.delete');
-    Route::get('/Datos/registro',[DatosController::class,'create'])->name('datos.registro');
+    return view('plantilla.blade.php');
+    
+Route::get('/Datos/registro',[DatosController::class,'create'])->name('datos.registro');
+Route::post('/Datos/guardar',[DatosController::class,'guardar'])->name('datos.guardar');
+Route::get('/Datos/list',[DatosController::class,'list'])->name('datos.list');
+Route::get('/Datos/edit/{iden}',[DatosController::class,'edit'])->name('datos.edit');
+Route::put('Datos/{dat}', [DatosController::class, 'update'])->name('datos.update');
+Route::get('Datos/delete{iden}', [DatosController::class, 'delete'])->name('datos.delete');
 });
